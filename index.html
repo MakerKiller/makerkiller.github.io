@@ -6,4 +6,15 @@ title: 积分榜
 
 <h2>Scoreboard</h2>
 
-<iframe scrolling=auto width=100% height=10000 marginwidth=0 marginheight=0 src="\assets\resources\scoreboard.html"></iframe>
+<!--iframe scrolling=auto width=100% height=10000 marginwidth=0 marginheight=0 src="\assets\resources\scoreboard.html"></iframe-->
+
+<iframe src="\assets\resources\scoreboard.html" id="iframepage" name="iframepage" frameBorder=0 scrolling=no width="100%" onLoad="iFrameHeight()" ></iframe>Javascript代码： 
+<script type="text/javascript" language="javascript"> 
+function iFrameHeight() { 
+var ifm= document.getElementById("iframepage"); 
+var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument; 
+if(ifm != null && subWeb != null) { 
+ifm.height = subWeb.body.scrollHeight; 
+} 
+} 
+</script> 

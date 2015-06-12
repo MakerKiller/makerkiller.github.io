@@ -1,0 +1,20 @@
+---
+layout: page
+title: Learn 
+header: Learn
+group: navigation
+---
+{% include JB/setup %}
+
+<ul class="posts">
+    {% for post in site.posts %}
+        <li class="post">
+            <span class="date">{{ post.date | date_to_string  }}</span> &raquo;
+            <a class="title" href="{{ site.url }}{{ post.url }}">{{post.title }}</a>
+            <br>
+            <br>
+            {{ post.description }}
+            <br><br><br>
+        </li>
+    {% endfor %}
+</ul>

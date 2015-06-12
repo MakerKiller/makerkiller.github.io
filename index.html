@@ -1,20 +1,9 @@
 ---
 layout: page
-title: Homepage
+title: 积分榜
 ---
 {% include JB/setup %}
 
-<h2>Articles</h2>
+<h2>Scoreboard</h2>
 
-<ul class="posts">
-    {% for post in site.posts %}
-        <li class="post">
-            <span class="date">{{ post.date | date_to_string  }}</span> &raquo;
-            <a class="title" href="{{ site.url }}{{ post.url }}">{{post.title }}</a>
-            <br>
-            <br>
-            {{ post.description }}
-            <br><br><br>
-        </li>
-    {% endfor %}
-</ul>
+
